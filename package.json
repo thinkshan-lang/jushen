@@ -1,0 +1,16 @@
+{
+  "name": "token-api-relay",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "check": "node --check app.js && node --check routes/chat.js && node --check middleware/auth.js && node --check services/adapter.js && node --check services/billing.js && node --check services/keyPool.js && node --check config/db.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.2",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
